@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "10172460202",
+    "project_id": "pushnotification-84ba5",
+    "storage_bucket": "pushnotification-84ba5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10172460202:android:7d64125a49bcfe136ab4d3",
+        "android_client_info": {
+          "package_name": "com.example.march_1_firebase_messaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10172460202-tc5hhhgigeikl0ibjpt3h26pmi95hm0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH0uVjGHFuWMylwTVBvQCxfGUE7BUeuaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10172460202-tc5hhhgigeikl0ibjpt3h26pmi95hm0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
