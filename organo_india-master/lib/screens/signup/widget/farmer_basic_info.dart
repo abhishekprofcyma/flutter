@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:organo_india/constants.dart';
+<<<<<<< HEAD
 import 'package:organo_india/data/api/local/shared_prefrence.dart';
+=======
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
 
 class FarmerBasicInfo extends StatefulWidget {
   @override
@@ -24,7 +27,13 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
         Text(
           "Farmer Name",
           style: Theme.of(context).textTheme.headline6?.copyWith(
+<<<<<<< HEAD
               color: Colors.black, fontSize: 24, fontWeight: FontWeight.w600),
+=======
+              color: Colors.black,
+              fontSize: 24,
+              fontWeight: FontWeight.w600),
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
         ),
         SizedBox(
           height: 8,
@@ -69,7 +78,13 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
                 border: Border(
                   left: BorderSide(color: Color(0xff919191), width: 1),
                 ),
+<<<<<<< HEAD
                 boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 2)],
+=======
+                boxShadow: [
+                  BoxShadow(color: Colors.black26, blurRadius: 2)
+                ],
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                 color: Colors.white),
             child: Row(
               children: [
@@ -110,7 +125,13 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
                 border: Border(
                   left: BorderSide(color: Color(0xff919191), width: 1),
                 ),
+<<<<<<< HEAD
                 boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 2)],
+=======
+                boxShadow: [
+                  BoxShadow(color: Colors.black26, blurRadius: 2)
+                ],
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                 color: Colors.white),
             child: Row(
               children: [
@@ -151,7 +172,13 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
                 border: Border(
                   left: BorderSide(color: Color(0xff919191), width: 1),
                 ),
+<<<<<<< HEAD
                 boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 2)],
+=======
+                boxShadow: [
+                  BoxShadow(color: Colors.black26, blurRadius: 2)
+                ],
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                 color: Colors.white),
             child: Row(
               children: [
@@ -222,8 +249,12 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
               "Save",
               style: Theme.of(context)
                   .textTheme
+<<<<<<< HEAD
                   .headline6
                   ?.copyWith(color: Colors.white),
+=======
+                  .headline6?.copyWith(color: Colors.white),
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
             ),
             style: OutlinedButton.styleFrom(
               side: BorderSide(color: kPrimaryColor),
@@ -233,16 +264,24 @@ class _FarmerBasicInfoState extends State<FarmerBasicInfo> {
         Container(
           width: MediaQuery.of(context).size.width * 0.7,
           child: OutlinedButton(
+<<<<<<< HEAD
             onPressed: () async {
               await saveLogin(false);
+=======
+            onPressed: () {
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
               Navigator.pushNamed(context, "/user_selection");
             },
             child: Text(
               "Logout",
               style: Theme.of(context)
                   .textTheme
+<<<<<<< HEAD
                   .headline6
                   ?.copyWith(color: kPrimaryColor),
+=======
+                  .headline6?.copyWith(color: kPrimaryColor),
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
             ),
             style: OutlinedButton.styleFrom(
               side: BorderSide(color: kPrimaryColor),

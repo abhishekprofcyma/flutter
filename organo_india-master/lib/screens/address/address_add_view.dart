@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     // TODO: implement initState
     import 'package:flutter/material.dart';
@@ -28,6 +29,38 @@
     VillageModelDataTahsil? villageSelected;
     @override
     void initState() {
+=======
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:organo_india/model/address/city_model.dart';
+import 'package:organo_india/model/address/country_model.dart';
+import 'package:organo_india/model/address/state_model.dart';
+import 'package:organo_india/model/address/village_model.dart';
+import 'package:organo_india/screens/widgets/circle_view.dart';
+import 'package:organo_india/repo.dart';
+
+import '../../constants.dart';
+
+class AddressAddView extends StatefulWidget {
+  @override
+  _AddressAddViewState createState() => _AddressAddViewState();
+}
+
+class _AddressAddViewState extends State<AddressAddView> {
+  Repo repo = Repo();
+  List<CountryModelDataCountry>? countryList = [];
+  List<StateModelDataState>? stateList = [];
+  List<CityModelDataCity>? cityList = [];
+  List<VillageModelDataTahsil>? villageList = [];
+  VillageModelDataTahsil? villageSelected;
+  CityModelDataCity? citySelected;
+  StateModelDataState? stateSelected;
+  CountryModelDataCountry? countrySelected;
+  @override
+  void initState() {
+    super.initState();
+    // Map<String, String> map = Map();
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
     repo.getCountry(context, Map()).then((value) {
       countryList = [];
       countryList?.addAll(value.data!.country!);
@@ -38,7 +71,10 @@
   @override
   Widget build(BuildContext context) {
     int listSize = 1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size(double.infinity, 56 + 36),
@@ -141,8 +177,13 @@
                                 setState(() {});
                                 Map<String, String> map = Map();
                                 map['country_id'] = "${countrySelected?.id}";
+<<<<<<< HEAD
                                 stateList = [];
                                 repo.postState(context, map).then((value) {
+=======
+                                repo.postState(context, map).then((value) {
+                                  stateList = [];
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                   stateList?.addAll(value.data!.state!);
                                   setState(() {});
                                 });
@@ -187,10 +228,16 @@
                                 setState(() {});
                                 Map<String, String> map = Map();
                                 map['state_id'] = "${stateSelected?.id}";
+<<<<<<< HEAD
                                 stateList = [];
                                 repo.postCity(context, map).then((value) {
                                   cityList = [];
                                   cityList.addAll(value.data!.city!);
+=======
+                                repo.postCity(context, map).then((value) {
+                                  cityList = [];
+                                  cityList?.addAll(value.data!.city!);
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                   setState(() {});
                                 });
                               },
@@ -214,7 +261,11 @@
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: DropdownButton(
+<<<<<<< HEAD
                               items: cityList.map((CityModelDataCity value) {
+=======
+                              items: cityList!.map((CityModelDataCity value) {
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                 return DropdownMenuItem<CityModelDataCity>(
                                   value: value,
                                   child: Text(value.name ?? ""),
@@ -225,10 +276,16 @@
                                 setState(() {});
                                 Map<String, String> map = Map();
                                 map['city_id'] = "${citySelected?.id}";
+<<<<<<< HEAD
                                 stateList = [];
                                 repo.postVillage(context, map).then((value) {
                                   villageList = [];
                                   villageList.addAll(value.data!.tahsil!);
+=======
+                                repo.postVillage(context, map).then((value) {
+                                  villageList = [];
+                                  villageList?.addAll(value.data!.tahsil!);
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                   setState(() {});
                                 });
                               },
@@ -252,7 +309,11 @@
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: DropdownButton(
+<<<<<<< HEAD
                               items: villageList
+=======
+                              items: villageList!
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                   .map((VillageModelDataTahsil value) {
                                 return DropdownMenuItem<VillageModelDataTahsil>(
                                   value: value,
@@ -262,7 +323,10 @@
                               onChanged: (value) {
                                 villageSelected =
                                     value as VillageModelDataTahsil;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                                 setState(() {});
                               },
                               hint: Text(villageSelected == null

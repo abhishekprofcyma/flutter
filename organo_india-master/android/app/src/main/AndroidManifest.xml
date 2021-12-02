@@ -30,7 +30,10 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+<<<<<<< HEAD
                 
+=======
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.

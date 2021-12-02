@@ -55,6 +55,11 @@ class _OtpViewState extends State<OtpView> {
         key: _formKey,
         child: Column(
           children: <Widget>[
+<<<<<<< HEAD
+=======
+            Text(widget.otp),
+            Text(widget.mobileNumber),
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
             SizedBox(
               height: size.height * 0.12,
             ),
@@ -121,10 +126,16 @@ class _OtpViewState extends State<OtpView> {
                     repo.registerUser(context, map).then((value) {
                       if (value.success == true) {
                         saveToken(value.data.token);
+<<<<<<< HEAD
                         saveLogin(true);
                         print('registered successfully');
                       } else {
                         saveLogin(false);
+=======
+                        // saveLogin(value.success);
+                        print('registered successfully');
+                      } else {
+>>>>>>> ea4e1118d99d30d0eb3053985e0913b905503883
                         print('register faild');
                       }
                     });
